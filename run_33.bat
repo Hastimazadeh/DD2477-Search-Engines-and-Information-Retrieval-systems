@@ -1,0 +1,1 @@
+java -cp classes ir.KGramIndex -f kgram_test.txt -p patterns.txt -k 3 -kg "abb"

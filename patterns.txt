@@ -1,0 +1,101 @@
+//
+//  Information retrieval course
+//  First version: Johan Boye 2016
+//
+// In this file you can put your regular expressions
+// for matching non-standard words (like mail addresses).
+//
+// As you have probably already understood, lines beginning
+// with "//" are comments.
+//
+// The regular expression below is an example of a useful
+// pattern. You can keep it, modify it, or remove it, as you
+// wish.
+
+
+// Twenty-four seven
+^\d{2}\/\d
+
+
+// ADD YOUR PATTERNS HERE
+
+// Website URL
+(https?:\/\/)(\S+)
+
+
+// Email (any non-white char starting with letter)@word.word.word.word .... .word for as many .com.se.kth.nok as possible
+^\w\S+@\w+(\.\w+)+
+
+
+// 'em instead of them
+^'em
+
+
+// e.g.
+e\.g\.
+
+
+// TIME
+// xx:xx:xx
+(^[01]\d|^2[0-3])(:[0-5]\d){2}
+
+// xx.xx p.m. or a.m.
+^(1[0-2]|\d)\.[0-5]\d
+
+// a.m. or p.m.
+^[ap]\.m\.
+
+// a.d.
+^a\.d\.
+
+// b.c.
+^b\.c\.
+
+
+// American phone number?
+(1-)?(\d{3}-){2}\d{4}
+
+// (yyy or yyyyyy)-xxxx
+(\d{3}|\d{6})-(\d{4}|x{4})
+
+
+// Number with commas
+[1-9]+(,[1-9]\d{2})+
+
+
+// Very basic and wrong IP address, matches xxx.xxx.xxx.xxx; x in 0-9
+^\d{3}(\.\d{3}){3}
+
+
+// Money
+\$\d+
+
+
+// Digits with dots between like in a book section or 6.15 p.m.
+^\d(\.\d){1,2}
+
+
+// File with extension
+(\w|_|-)+\.[a-z]+
+
+
+// word'{one or two letters}
+^[a-zA-Z]+'[a-zA-Z]{1,2}
+
+
+// word-word
+^[a-zA-Z]+\-[a-zA-Z]+
+
+
+// Number starting with a +
+^\+\d+
+
+
+\\Anything without white-space
+// \S+
+
+// The patterns will be tried from top to bottom, so it is a
+// good idea to put more specific patterns above more general
+// patterns.
+
+
