@@ -1,3 +1,5 @@
+# to generate graph for assignment 2
+
 import matplotlib.pyplot as plt
 
 # precision and recall values
