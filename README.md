@@ -14,7 +14,7 @@ The code skeletons were written by Johan Boye in 2017, and the files that have b
 
 ### Directory Structure
 - `assignmentPDFs/`: Contains the assignment descriptions in PDF format.
-- `calculation/`: Contains the calculation files and their results for each assignment.
+- `calculations/`: Contains the calculation files and their results for each assignment.
 
 ## Author
 - Hasti Mohebali Zadeh, 2023.
